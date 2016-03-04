@@ -5,7 +5,7 @@
 
 input = ""
 
-puts "Write a sentence (no numbers please)"
+puts "Write a sentence (no numbers or accents please)"
 input = gets.chomp
 
 # We transform the input into a new string that only includes alphanumerical characters (no punctuation allowed). Punctuation signals are converted into whitespace.
@@ -33,7 +33,7 @@ def solve_cipher(string, n)
 
 #The value for whitespace is its value -26 as it is not included in the alphanumerical rules defined above
 if x == ' '
-   new_index = ' '.ord -26
+   new_index = ' '.ord - 26
 end
 
 
