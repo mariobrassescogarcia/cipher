@@ -37,12 +37,12 @@ if x == ' '
 end
 
 
-#Declare the values of the index where it is above z
+#Declare the values of the index where it is above z's
 if new_index > 'z'.ord
       new_index = 'a'.ord + new_index - 'z'.ord - 1
 end
 
-
+#Declare the values of the index where it is beyond a's
 if new_index < 'a'.ord
    new_index = 'z'.ord - ('a'.ord - new_index) + 1
 end
