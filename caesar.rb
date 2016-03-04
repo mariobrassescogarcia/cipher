@@ -36,6 +36,8 @@ if x == ' '
    new_index = ' '.ord -26
 end
 
+
+#Declare the values of the index where it is above z
 if new_index > 'z'.ord
       new_index = 'a'.ord + new_index - 'z'.ord - 1
 end
