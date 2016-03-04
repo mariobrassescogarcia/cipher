@@ -8,7 +8,7 @@ input = ""
 puts "Write a sentence (no numbers please)"
 input = gets.chomp
 
-# We make the string to only include alphanumerical characters (no punctuation allowed). Punctuation signals are converted into whitespace.
+# We transform the input into a new string that only includes alphanumerical characters (no punctuation allowed). Punctuation signals are converted into whitespace.
 
 string = input.gsub(/[^a-z0-9\s]/i, '')
 
@@ -20,9 +20,13 @@ puts "Introduce the encryption rule (integer number)"
 n = gets.chomp.to_i
 
 
+#Create a function where the transformed input is converted into an array.
 
 def solve_cipher(string, n)
+
+#Split each element of the string to get and array and return an array where each element is x (to operate with each element)
   string.split('').map do |x|
+#Create a new variable that will be the new index for each element.
     new_index = x.ord + n
  
 
