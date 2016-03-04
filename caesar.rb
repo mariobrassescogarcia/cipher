@@ -46,7 +46,8 @@ end
 if new_index < 'a'.ord
    new_index = 'z'.ord - ('a'.ord - new_index) + 1
 end
-    
+ 
+ #Make the function return the list of numbers converted into letters   
    new_index.chr
 
 end.join
