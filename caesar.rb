@@ -29,9 +29,11 @@ def solve_cipher(string, n)
 #Create a new variable that will be the new index for each element.
     new_index = x.ord + n
  
+#Define the new index value with if conditional statements.
 
+#The value for whitespace is its value -26 as it is not included in the alphanumerical rules defined above
 if x == ' '
-   new_index = ' '.ord - 26
+   new_index = ' '.ord -26
 end
 
 if new_index > 'z'.ord
