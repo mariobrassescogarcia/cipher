@@ -5,7 +5,7 @@
 
 input = ""
 
-puts "Introduce una frase (sin números)"
+puts "Write a sentence (no numbers please)"
 input = gets.chomp
 
 # We make the string to only include alphanumerical characters (no punctuation allowed). Punctuation signals are converted into whitespace.
@@ -16,8 +16,9 @@ string = input.gsub(/[^a-z0-9\s]/i, '')
 
 # We ask the user to introduce the encryption rule (integer number)
 
-puts "Introduce regla de encriptación (número entero)"
+puts "Introduce the encryption rule (integer number)"
 n = gets.chomp.to_i
+
 
 
 def solve_cipher(string, n)
